@@ -33,5 +33,7 @@
 (require 'setup-editing)
 ;; for java
 (require 'setup-jdee)
+;; for python
+(require 'setup-python)
 
 (require 'setup-markdown)
