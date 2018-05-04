@@ -1,5 +1,5 @@
 ;;; Use Elpy for python development environment
-;;; Required rope, jedi, flake8, autorep8, and yapf
+;;; Required rope, jedi, flake8, autopep8, and yapf
 ;;; using pip
 
 (use-package elpy
