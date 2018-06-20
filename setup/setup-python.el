@@ -10,6 +10,7 @@
   )
 
 (setq python-shell-interpreter "python3")
+(setq python-indent-offset 4)
 (defun company-yasnippet-or-completion ()
   "Solve company yasnippet conflicts."
   (interactive)

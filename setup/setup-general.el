@@ -52,14 +52,14 @@
 ;;   :init
 ;;   (load-theme 'monokai t)
 ;;   )
-(use-package zenburn-theme
-  :init
-  (load-theme 'zenburn t)
-  )
-;; (use-package gruvbox-theme
+;; (use-package zenburn-theme
 ;;   :init
-;;   (load-theme 'gruvbox t)
+;;   (load-theme 'zenburn t)
 ;;   )
+(use-package gruvbox-theme
+  :init
+  (load-theme 'gruvbox t)
+  )
 ;;; use powerline
 (use-package powerline
   :init
