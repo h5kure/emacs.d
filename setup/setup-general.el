@@ -48,10 +48,18 @@
 ;;; Set up Theme ;;;
 ;;;;;;;;;;;;;;;;;;;;
 ;;; set default theme
-(use-package monokai-theme
+;; (use-package monokai-theme
+;;   :init
+;;   (load-theme 'monokai t)
+;;   )
+(use-package zenburn-theme
   :init
-  (load-theme 'monokai t)
+  (load-theme 'zenburn t)
   )
+;; (use-package gruvbox-theme
+;;   :init
+;;   (load-theme 'gruvbox t)
+;;   )
 ;;; use powerline
 (use-package powerline
   :init
