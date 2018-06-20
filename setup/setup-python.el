@@ -4,6 +4,24 @@
 
 (use-package elpy
   :init
-  (elpy-enable))
+  (setq elpy-rpc-python-command "/usr/local/bin/python3")
+  ;; (setq elpy-rpc-pythonpath "/usr/local/bin/python3")
+  (elpy-enable)
+  )
+
+(setq python-shell-interpreter "python3")
+(defun company-yasnippet-or-completion ()
+  "Solve company yasnippet conflicts."
+  (interactive)
+  (let ((yas-fallback-behavior
+         (apply 'company-complete-common nil)))
+    (yas-expand))
+  )
+(add-hook 'company-mode-hook
+          (lambda ()
+            (substitute-key-definition
+             'company-complete-common
+             'company-yasnippet-or-completion
+             company-active-map)))
 
 (provide 'setup-python)
