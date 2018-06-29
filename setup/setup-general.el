@@ -150,6 +150,8 @@
 ;;;;;;;;;;;;;;;;
 ;; setup font
 ;;;;;;;;;;;;;;;;
+;; to install Source Code Pro fonts in OS X
+;; brew tap caskroom/fonts && brew cask install font-source-code-pro
 (defun font-exists-p (font) "check if font exists" (if (null (x-list-fonts font)) nil t))
 (if (font-exists-p "Source Code Pro") (set-face-attribute 'default nil :font "Source Code Pro"))
 ;; (add-to-list 'default-frame-alist
