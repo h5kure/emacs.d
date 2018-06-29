@@ -157,4 +157,12 @@
 ;; (add-to-list 'default-frame-alist
 ;;              '(font . "Source Code Pro for Powerline"))
 
+;;;;;;;;;;;;;;;;;;;;;;;
+;; setup transparency
+;;;;;;;;;;;;;;;;;;;;;;;
+;; (set-frame-parameter (selected-frame) 'alpha '(active . inactive))
+;; (add-to-list 'default-frame-alist '(alpha . <both>))
+(set-frame-parameter (selected-frame) 'alpha '(95 . 85))
+;; (add-to-list 'default-frame-alist '(alpha . (95 . 85)))
+
 (provide 'setup-general)
