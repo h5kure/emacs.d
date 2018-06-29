@@ -1,5 +1,1 @@
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-elif [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
-fi
+export PS1="\w @ \h (\u) "
