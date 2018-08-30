@@ -32,7 +32,7 @@
 (require 'setup-cedet)
 (require 'setup-editing)
 ;; for java
-(require 'setup-jdee)
+;; (require 'setup-jdee)
 ;; for python
 (require 'setup-python)
 

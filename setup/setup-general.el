@@ -146,6 +146,13 @@
     (switch-to-buffer "*ssh*")))
 (global-set-key (kbd "<f3>") 'my-ssh)
 
+;;;;;;;;;;;;;;;;;;;;;;;
+;; connect to docker
+;; /docker:[docker container id]:
+;;;;;;;;;;;;;;;;;;;;;;;
+(use-package docker-tramp
+  :init
+  (require 'docker-tramp-compat))
 
 ;;;;;;;;;;;;;;;;
 ;; setup font
